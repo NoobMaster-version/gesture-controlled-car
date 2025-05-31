@@ -3,6 +3,12 @@
 ## Project Overview
 This project demonstrates a gesture-controlled RC car using an ESP32 microcontroller, an MPU6050 accelerometer/gyroscope sensor, and the ESP-NOW protocol for wireless communication. By tilting a sender device equipped with the MPU6050, users can control the direction and movement of an RC car in real-time. The project consists of two ESP32 modules: one as the sender (transmitting gesture data) and the other as the receiver (controlling the car's motors).
 
+## Media
+- **RC Car Model**:
+  ![RC Car](assets/RC_Car.png)
+- **Demo Video**: [Demo.mp4](assets/Demo.mp4)
+- **Project Report**: [Project_Report.pdf](Kartikey_Pathak_POSTER_Winter_Internship_SRW.pdf)
+
 ## Features
 - **Gesture Control**: Tilt-based control using the MPU6050 sensor to detect X and Y axis movements.
 - **Wireless Communication**: Utilizes ESP-NOW protocol for low-latency, peer-to-peer data transmission between ESP32 modules.
@@ -85,11 +91,6 @@ This project demonstrates a gesture-controlled RC car using an ESP32 microcontro
 - **MPU6050 not responding**: Check I2C connections (SCL/SDA) and ensure the sensor is powered correctly.
 - **Erratic motor behavior**: Verify motor driver connections and power supply voltage.
 - **ESP-NOW errors**: Confirm both ESP32s are on the same Wi-Fi channel (default is 0).
-
-## Media
-- **Demo Video**: [Working Demo of the car](Assets/Demo.mp4)
-- **RC Car Model**:
-  ![RC Car](Assets/RC_Car.png)
 
 ## Future Improvements
 - Add speed control using PWM signals.
